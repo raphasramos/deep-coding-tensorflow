@@ -1,0 +1,57 @@
+{
+  "model": {
+      "configs": {
+        "batch": 32, "patch": [32, 32, 3], "recursive": false, "levels": 10,
+        "loss": "mse", "quantized_latent": true,
+        "pixels_range": {"in": [-0.8, 0.8], "out": [-1, 1]},
+        "lr_politics": {"optimizer": "adam", "lr": 0.0001}
+      },
+      "load_model": null,
+      "new_model": {
+        "enc": [
+          {"type": "conv2d", "filters": 64, "kernel_size": 3,
+            "strides": 2, "activation": null, "padding": "same",
+            "name": "conv0", "use_bias": false},
+          {"type": "conv2d", "filters": 256, "kernel_size": 3,
+            "strides": 2, "activation": "tanh", "padding": "same",
+            "name": "conv1", "use_bias": false},
+          {"type": "conv2d", "filters": 512, "kernel_size": 3,
+            "strides": 2, "activation": "tanh", "padding": "same",
+            "name": "conv2", "use_bias": false},
+          {"type": "conv2d", "filters": 512, "kernel_size": 3,
+            "strides": 2, "activation": "tanh", "padding": "same",
+            "name": "conv3", "use_bias": false},
+          {"type": "conv_bin", "filters": 32, "kernel_size": 1,
+            "strides": 1, "activation": "tanh", "name": "bin"}
+        ],
+        "dec": [
+          {"type": "conv2d_transpose", "filters": 512, "kernel_size": 1,
+            "strides": 1, "activation": "tanh", "padding": "same",
+            "name": "deconv0", "use_bias": false},
+          {"type": "conv2d", "filters": 512, "kernel_size": 2,
+            "strides": 1, "activation": "tanh", "padding": "same",
+            "name": "deconv1", "use_bias": false},
+          {"type":  "depth_to_space", "block_size": 2, "name": "depth0"},
+          {"type": "conv2d", "filters": 512, "kernel_size": 3,
+            "strides": 1, "activation": "tanh", "padding": "same",
+            "name": "deconv2", "use_bias": false},
+          {"type":  "depth_to_space", "block_size": 2, "name": "depth1"},
+          {"type": "conv2d", "filters": 256, "kernel_size": 3,
+            "strides": 1, "activation": "tanh", "padding": "same",
+            "name": "deconv3", "use_bias": false},
+          {"type":  "depth_to_space", "block_size": 2, "name": "depth2"},
+          {"type": "conv2d", "filters": 128, "kernel_size": 3,
+            "strides": 1, "activation": "tanh", "padding": "same",
+            "name": "deconv4", "use_bias": false},
+          {"type":  "depth_to_space", "block_size": 2, "name": "depth3"},
+          {"type": "conv2d_transpose", "filters": 3, "kernel_size": 1,
+            "strides": 1, "activation": "tanh", "padding": "same",
+            "name": "deconv5", "use_bias": false}
+        ]
+      }
+  },
+  "run": {
+    "train": true, "num_ckpt": 10, "out_folder": "../output/non-recursive-10level-tanh-offset",
+    "data_loader": {"num_data": 150000, "recursive_glob": "/usr/eduardo_partitioned/train/database[2,4]/**/*.png"}
+  }
+}

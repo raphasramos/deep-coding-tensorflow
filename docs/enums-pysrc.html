@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="ascii"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>enums</title>
+  <link rel="stylesheet" href="epydoc.css" type="text/css" />
+  <script type="text/javascript" src="epydoc.js"></script>
+</head>
+
+<body bgcolor="white" text="black" link="blue" vlink="#204080"
+      alink="#204080">
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+      <th class="navbar" width="100%"></th>
+  </tr>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="100%">
+      <span class="breadcrumbs">
+        Module&nbsp;enums
+      </span>
+    </td>
+    <td>
+      <table cellpadding="0" cellspacing="0">
+        <!-- hide/show private -->
+        <tr><td align="right"><span class="options">[<a href="javascript:void(0);" class="privatelink"
+    onclick="toggle_private();">hide&nbsp;private</a>]</span></td></tr>
+        <tr><td align="right"><span class="options"
+            >[<a href="frames.html" target="_top">frames</a
+            >]&nbsp;|&nbsp;<a href="enums-pysrc.html"
+            target="_top">no&nbsp;frames</a>]</span></td></tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<h1 class="epydoc">Source Code for <a href="enums-module.html">Module enums</a></h1>
+<pre class="py-src">
+<a name="L1"></a><tt class="py-lineno"> 1</tt>  <tt class="py-line"><tt class="py-docstring">""" File with the useful enums for the project """</tt> </tt>
+<a name="L2"></a><tt class="py-lineno"> 2</tt>  <tt class="py-line"> </tt>
+<a name="L3"></a><tt class="py-lineno"> 3</tt>  <tt class="py-line"> </tt>
+<a name="L4"></a><tt class="py-lineno"> 4</tt>  <tt class="py-line"><tt class="py-keyword">from</tt> <tt class="py-name">img_common</tt><tt class="py-op">.</tt><tt id="link-0" class="py-name" targets="Module keras_custom=keras_custom-module.html"><a title="keras_custom" class="py-name" href="#" onclick="return doclink('link-0', 'keras_custom', 'link-0');">keras_custom</a></tt> <tt class="py-keyword">import</tt> <tt class="py-op">*</tt> </tt>
+<a name="L5"></a><tt class="py-lineno"> 5</tt>  <tt class="py-line"><tt class="py-keyword">from</tt> <tt class="py-name">enum</tt> <tt class="py-keyword">import</tt> <tt class="py-name">Enum</tt><tt class="py-op">,</tt> <tt class="py-name">IntEnum</tt> </tt>
+<a name="Folders"></a><div id="Folders-def"><a name="L6"></a><tt class="py-lineno"> 6</tt>  <tt class="py-line"> </tt>
+<a name="L7"></a><tt class="py-lineno"> 7</tt>  <tt class="py-line"> </tt>
+<a name="L8"></a><tt class="py-lineno"> 8</tt> <a class="py-toggle" href="#" id="Folders-toggle" onclick="return toggle('Folders');">-</a><tt class="py-line"><tt class="py-keyword">class</tt> <a class="py-def-name" href="enums.Folders-class.html">Folders</a><tt class="py-op">(</tt><tt class="py-base-class">IntEnum</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="Folders-collapsed" style="display:none;" pad="++" indent="++++"></div><div id="Folders-expanded"><a name="L9"></a><tt class="py-lineno"> 9</tt>  <tt class="py-line">    <tt class="py-docstring">""" Enum representing the names of the folders for output """</tt> </tt>
+<a name="L10"></a><tt class="py-lineno">10</tt>  <tt class="py-line">    <tt id="link-1" class="py-name" targets="Variable enums.Folders.RAW_DATA=enums.Folders-class.html#RAW_DATA"><a title="enums.Folders.RAW_DATA" class="py-name" href="#" onclick="return doclink('link-1', 'RAW_DATA', 'link-1');">RAW_DATA</a></tt> <tt class="py-op">=</tt> <tt class="py-number">0</tt> </tt>
+<a name="L11"></a><tt class="py-lineno">11</tt>  <tt class="py-line">    <tt id="link-2" class="py-name" targets="Variable enums.Folders.PARSED_DATA=enums.Folders-class.html#PARSED_DATA"><a title="enums.Folders.PARSED_DATA" class="py-name" href="#" onclick="return doclink('link-2', 'PARSED_DATA', 'link-2');">PARSED_DATA</a></tt> <tt class="py-op">=</tt> <tt class="py-number">1</tt> </tt>
+<a name="L12"></a><tt class="py-lineno">12</tt>  <tt class="py-line">    <tt id="link-3" class="py-name" targets="Variable enums.Folders.TENSORBOARD=enums.Folders-class.html#TENSORBOARD"><a title="enums.Folders.TENSORBOARD" class="py-name" href="#" onclick="return doclink('link-3', 'TENSORBOARD', 'link-3');">TENSORBOARD</a></tt> <tt class="py-op">=</tt> <tt class="py-number">2</tt> </tt>
+<a name="L13"></a><tt class="py-lineno">13</tt>  <tt class="py-line">    <tt id="link-4" class="py-name" targets="Variable enums.Folders.CHECKPOINTS=enums.Folders-class.html#CHECKPOINTS"><a title="enums.Folders.CHECKPOINTS" class="py-name" href="#" onclick="return doclink('link-4', 'CHECKPOINTS', 'link-4');">CHECKPOINTS</a></tt> <tt class="py-op">=</tt> <tt class="py-number">3</tt> </tt>
+<a name="L14"></a><tt class="py-lineno">14</tt>  <tt class="py-line"> </tt>
+<a name="Folders.__str__"></a><div id="Folders.__str__-def"><a name="L15"></a><tt class="py-lineno">15</tt> <a class="py-toggle" href="#" id="Folders.__str__-toggle" onclick="return toggle('Folders.__str__');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="enums.Folders-class.html#__str__">__str__</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="Folders.__str__-collapsed" style="display:none;" pad="++" indent="++++++++"></div><div id="Folders.__str__-expanded"><a name="L16"></a><tt class="py-lineno">16</tt>  <tt class="py-line">        <tt class="py-keyword">return</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">name</tt><tt class="py-op">.</tt><tt class="py-name">lower</tt><tt class="py-op">(</tt><tt class="py-op">)</tt> </tt>
+</div></div><a name="L17"></a><tt class="py-lineno">17</tt>  <tt class="py-line"> </tt>
+<a name="Optimizers"></a><div id="Optimizers-def"><a name="L18"></a><tt class="py-lineno">18</tt>  <tt class="py-line"> </tt>
+<a name="L19"></a><tt class="py-lineno">19</tt> <a class="py-toggle" href="#" id="Optimizers-toggle" onclick="return toggle('Optimizers');">-</a><tt class="py-line"><tt class="py-keyword">class</tt> <a class="py-def-name" href="enums.Optimizers-class.html">Optimizers</a><tt class="py-op">(</tt><tt class="py-base-class">Enum</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="Optimizers-collapsed" style="display:none;" pad="++" indent="++++"></div><div id="Optimizers-expanded"><a name="L20"></a><tt class="py-lineno">20</tt>  <tt class="py-line">    <tt class="py-docstring">""" Enum representing the acceptable optimizers """</tt> </tt>
+<a name="L21"></a><tt class="py-lineno">21</tt>  <tt class="py-line">    <tt id="link-5" class="py-name" targets="Variable enums.Optimizers.ADAM=enums.Optimizers-class.html#ADAM"><a title="enums.Optimizers.ADAM" class="py-name" href="#" onclick="return doclink('link-5', 'ADAM', 'link-5');">ADAM</a></tt> <tt class="py-op">=</tt> <tt class="py-name">tf</tt><tt class="py-op">.</tt><tt class="py-name">keras</tt><tt class="py-op">.</tt><tt class="py-name">optimizers</tt><tt class="py-op">.</tt><tt class="py-name">Adam</tt> </tt>
+<a name="L22"></a><tt class="py-lineno">22</tt>  <tt class="py-line">    <tt id="link-6" class="py-name" targets="Variable enums.Optimizers.RMS=enums.Optimizers-class.html#RMS"><a title="enums.Optimizers.RMS" class="py-name" href="#" onclick="return doclink('link-6', 'RMS', 'link-6');">RMS</a></tt> <tt class="py-op">=</tt> <tt class="py-name">tf</tt><tt class="py-op">.</tt><tt class="py-name">keras</tt><tt class="py-op">.</tt><tt class="py-name">optimizers</tt><tt class="py-op">.</tt><tt class="py-name">RMSprop</tt> </tt>
+<a name="L23"></a><tt class="py-lineno">23</tt>  <tt class="py-line"> </tt>
+<a name="Optimizers.__str__"></a><div id="Optimizers.__str__-def"><a name="L24"></a><tt class="py-lineno">24</tt> <a class="py-toggle" href="#" id="Optimizers.__str__-toggle" onclick="return toggle('Optimizers.__str__');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="enums.Optimizers-class.html#__str__">__str__</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="Optimizers.__str__-collapsed" style="display:none;" pad="++" indent="++++++++"></div><div id="Optimizers.__str__-expanded"><a name="L25"></a><tt class="py-lineno">25</tt>  <tt class="py-line">        <tt class="py-keyword">return</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">name</tt><tt class="py-op">.</tt><tt class="py-name">lower</tt><tt class="py-op">(</tt><tt class="py-op">)</tt> </tt>
+</div><a name="L26"></a><tt class="py-lineno">26</tt>  <tt class="py-line"> </tt>
+<a name="L27"></a><tt class="py-lineno">27</tt>  <tt class="py-line">    <tt class="py-decorator">@</tt><tt class="py-decorator">classmethod</tt> </tt>
+<a name="Optimizers._missing_"></a><div id="Optimizers._missing_-def"><a name="L28"></a><tt class="py-lineno">28</tt> <a class="py-toggle" href="#" id="Optimizers._missing_-toggle" onclick="return toggle('Optimizers._missing_');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="enums.Optimizers-class.html#_missing_">_missing_</a><tt class="py-op">(</tt><tt class="py-param">cls</tt><tt class="py-op">,</tt> <tt class="py-param">value</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="Optimizers._missing_-collapsed" style="display:none;" pad="++" indent="++++++++"></div><div id="Optimizers._missing_-expanded"><a name="L29"></a><tt class="py-lineno">29</tt>  <tt class="py-line">        <tt class="py-keyword">return</tt> <tt class="py-name">cls</tt><tt class="py-op">.</tt><tt class="py-name">__members__</tt><tt class="py-op">[</tt><tt class="py-name">value</tt><tt class="py-op">.</tt><tt class="py-name">upper</tt><tt class="py-op">(</tt><tt class="py-op">)</tt><tt class="py-op">]</tt> </tt>
+</div></div><a name="L30"></a><tt class="py-lineno">30</tt>  <tt class="py-line"> </tt>
+<a name="Losses"></a><div id="Losses-def"><a name="L31"></a><tt class="py-lineno">31</tt>  <tt class="py-line"> </tt>
+<a name="L32"></a><tt class="py-lineno">32</tt> <a class="py-toggle" href="#" id="Losses-toggle" onclick="return toggle('Losses');">-</a><tt class="py-line"><tt class="py-keyword">class</tt> <a class="py-def-name" href="enums.Losses-class.html">Losses</a><tt class="py-op">(</tt><tt class="py-base-class">Enum</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="Losses-collapsed" style="display:none;" pad="++" indent="++++"></div><div id="Losses-expanded"><a name="L33"></a><tt class="py-lineno">33</tt>  <tt class="py-line">    <tt class="py-docstring">""" Enum with the available losses """</tt> </tt>
+<a name="L34"></a><tt class="py-lineno">34</tt>  <tt class="py-line">    <tt id="link-7" class="py-name" targets="Variable enums.Losses.MSE=enums.Losses-class.html#MSE"><a title="enums.Losses.MSE" class="py-name" href="#" onclick="return doclink('link-7', 'MSE', 'link-7');">MSE</a></tt> <tt class="py-op">=</tt> <tt class="py-name">tf</tt><tt class="py-op">.</tt><tt class="py-name">keras</tt><tt class="py-op">.</tt><tt class="py-name">losses</tt><tt class="py-op">.</tt><tt class="py-name">MeanSquaredError</tt><tt class="py-op">(</tt><tt class="py-op">)</tt> </tt>
+<a name="L35"></a><tt class="py-lineno">35</tt>  <tt class="py-line"> </tt>
+<a name="Losses.__str__"></a><div id="Losses.__str__-def"><a name="L36"></a><tt class="py-lineno">36</tt> <a class="py-toggle" href="#" id="Losses.__str__-toggle" onclick="return toggle('Losses.__str__');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="enums.Losses-class.html#__str__">__str__</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="Losses.__str__-collapsed" style="display:none;" pad="++" indent="++++++++"></div><div id="Losses.__str__-expanded"><a name="L37"></a><tt class="py-lineno">37</tt>  <tt class="py-line">        <tt class="py-keyword">return</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">name</tt><tt class="py-op">.</tt><tt class="py-name">lower</tt><tt class="py-op">(</tt><tt class="py-op">)</tt> </tt>
+</div><a name="L38"></a><tt class="py-lineno">38</tt>  <tt class="py-line"> </tt>
+<a name="L39"></a><tt class="py-lineno">39</tt>  <tt class="py-line">    <tt class="py-decorator">@</tt><tt class="py-decorator">classmethod</tt> </tt>
+<a name="Losses._missing_"></a><div id="Losses._missing_-def"><a name="L40"></a><tt class="py-lineno">40</tt> <a class="py-toggle" href="#" id="Losses._missing_-toggle" onclick="return toggle('Losses._missing_');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="enums.Losses-class.html#_missing_">_missing_</a><tt class="py-op">(</tt><tt class="py-param">cls</tt><tt class="py-op">,</tt> <tt class="py-param">value</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="Losses._missing_-collapsed" style="display:none;" pad="++" indent="++++++++"></div><div id="Losses._missing_-expanded"><a name="L41"></a><tt class="py-lineno">41</tt>  <tt class="py-line">        <tt class="py-keyword">return</tt> <tt class="py-name">cls</tt><tt class="py-op">.</tt><tt class="py-name">__members__</tt><tt class="py-op">[</tt><tt class="py-name">value</tt><tt class="py-op">.</tt><tt class="py-name">upper</tt><tt class="py-op">(</tt><tt class="py-op">)</tt><tt class="py-op">]</tt> </tt>
+</div></div><a name="L42"></a><tt class="py-lineno">42</tt>  <tt class="py-line"> </tt>
+<a name="KLayers"></a><div id="KLayers-def"><a name="L43"></a><tt class="py-lineno">43</tt>  <tt class="py-line"> </tt>
+<a name="L44"></a><tt class="py-lineno">44</tt> <a class="py-toggle" href="#" id="KLayers-toggle" onclick="return toggle('KLayers');">-</a><tt class="py-line"><tt class="py-keyword">class</tt> <a class="py-def-name" href="enums.KLayers-class.html">KLayers</a><tt class="py-op">(</tt><tt class="py-base-class">Enum</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="KLayers-collapsed" style="display:none;" pad="++" indent="++++"></div><div id="KLayers-expanded"><a name="L45"></a><tt class="py-lineno">45</tt>  <tt class="py-line">    <tt class="py-docstring">""" Enum with keras layers (the strings used in the config file) """</tt> </tt>
+<a name="L46"></a><tt class="py-lineno">46</tt>  <tt class="py-line">    <tt id="link-8" class="py-name" targets="Variable enums.KLayers.CONV2D=enums.KLayers-class.html#CONV2D"><a title="enums.KLayers.CONV2D" class="py-name" href="#" onclick="return doclink('link-8', 'CONV2D', 'link-8');">CONV2D</a></tt> <tt class="py-op">=</tt> <tt class="py-name">tf</tt><tt class="py-op">.</tt><tt class="py-name">keras</tt><tt class="py-op">.</tt><tt class="py-name">layers</tt><tt class="py-op">.</tt><tt class="py-name">Conv2D</tt> </tt>
+<a name="L47"></a><tt class="py-lineno">47</tt>  <tt class="py-line">    <tt id="link-9" class="py-name" targets="Variable enums.KLayers.CONV2D_LSTM=enums.KLayers-class.html#CONV2D_LSTM"><a title="enums.KLayers.CONV2D_LSTM" class="py-name" href="#" onclick="return doclink('link-9', 'CONV2D_LSTM', 'link-9');">CONV2D_LSTM</a></tt> <tt class="py-op">=</tt> <tt class="py-name">tf</tt><tt class="py-op">.</tt><tt class="py-name">keras</tt><tt class="py-op">.</tt><tt class="py-name">layers</tt><tt class="py-op">.</tt><tt class="py-name">ConvLSTM2D</tt> </tt>
+<a name="L48"></a><tt class="py-lineno">48</tt>  <tt class="py-line">    <tt id="link-10" class="py-name" targets="Variable enums.KLayers.CONV2D_TRANSPOSE=enums.KLayers-class.html#CONV2D_TRANSPOSE"><a title="enums.KLayers.CONV2D_TRANSPOSE" class="py-name" href="#" onclick="return doclink('link-10', 'CONV2D_TRANSPOSE', 'link-10');">CONV2D_TRANSPOSE</a></tt> <tt class="py-op">=</tt> <tt class="py-name">tf</tt><tt class="py-op">.</tt><tt class="py-name">keras</tt><tt class="py-op">.</tt><tt class="py-name">layers</tt><tt class="py-op">.</tt><tt class="py-name">Conv2DTranspose</tt> </tt>
+<a name="L49"></a><tt class="py-lineno">49</tt>  <tt class="py-line">    <tt id="link-11" class="py-name" targets="Variable enums.KLayers.CONV3D=enums.KLayers-class.html#CONV3D"><a title="enums.KLayers.CONV3D" class="py-name" href="#" onclick="return doclink('link-11', 'CONV3D', 'link-11');">CONV3D</a></tt> <tt class="py-op">=</tt> <tt class="py-name">tf</tt><tt class="py-op">.</tt><tt class="py-name">keras</tt><tt class="py-op">.</tt><tt class="py-name">layers</tt><tt class="py-op">.</tt><tt class="py-name">Conv3D</tt> </tt>
+<a name="L50"></a><tt class="py-lineno">50</tt>  <tt class="py-line">    <tt id="link-12" class="py-name" targets="Variable enums.KLayers.CONV3D_TRANSPOSE=enums.KLayers-class.html#CONV3D_TRANSPOSE"><a title="enums.KLayers.CONV3D_TRANSPOSE" class="py-name" href="#" onclick="return doclink('link-12', 'CONV3D_TRANSPOSE', 'link-12');">CONV3D_TRANSPOSE</a></tt> <tt class="py-op">=</tt> <tt class="py-name">tf</tt><tt class="py-op">.</tt><tt class="py-name">keras</tt><tt class="py-op">.</tt><tt class="py-name">layers</tt><tt class="py-op">.</tt><tt class="py-name">Conv3DTranspose</tt> </tt>
+<a name="L51"></a><tt class="py-lineno">51</tt>  <tt class="py-line">    <tt id="link-13" class="py-name" targets="Variable enums.KLayers.DENSE=enums.KLayers-class.html#DENSE"><a title="enums.KLayers.DENSE" class="py-name" href="#" onclick="return doclink('link-13', 'DENSE', 'link-13');">DENSE</a></tt> <tt class="py-op">=</tt> <tt class="py-name">tf</tt><tt class="py-op">.</tt><tt class="py-name">keras</tt><tt class="py-op">.</tt><tt class="py-name">layers</tt><tt class="py-op">.</tt><tt class="py-name">Dense</tt> </tt>
+<a name="L52"></a><tt class="py-lineno">52</tt>  <tt class="py-line">    <tt id="link-14" class="py-name" targets="Variable enums.KLayers.SUBTRACT=enums.KLayers-class.html#SUBTRACT"><a title="enums.KLayers.SUBTRACT" class="py-name" href="#" onclick="return doclink('link-14', 'SUBTRACT', 'link-14');">SUBTRACT</a></tt> <tt class="py-op">=</tt> <tt class="py-name">tf</tt><tt class="py-op">.</tt><tt class="py-name">keras</tt><tt class="py-op">.</tt><tt class="py-name">layers</tt><tt class="py-op">.</tt><tt class="py-name">Subtract</tt> </tt>
+<a name="L53"></a><tt class="py-lineno">53</tt>  <tt class="py-line">    <tt id="link-15" class="py-name" targets="Variable enums.KLayers.RESHAPE=enums.KLayers-class.html#RESHAPE"><a title="enums.KLayers.RESHAPE" class="py-name" href="#" onclick="return doclink('link-15', 'RESHAPE', 'link-15');">RESHAPE</a></tt> <tt class="py-op">=</tt> <tt class="py-name">tf</tt><tt class="py-op">.</tt><tt class="py-name">keras</tt><tt class="py-op">.</tt><tt class="py-name">layers</tt><tt class="py-op">.</tt><tt class="py-name">Reshape</tt> </tt>
+<a name="L54"></a><tt class="py-lineno">54</tt>  <tt class="py-line"> </tt>
+<a name="L55"></a><tt class="py-lineno">55</tt>  <tt class="py-line">    <tt class="py-comment"># Custom layers</tt> </tt>
+<a name="L56"></a><tt class="py-lineno">56</tt>  <tt class="py-line">    <tt id="link-16" class="py-name" targets="Variable enums.KLayers.QUANTIZE=enums.KLayers-class.html#QUANTIZE"><a title="enums.KLayers.QUANTIZE" class="py-name" href="#" onclick="return doclink('link-16', 'QUANTIZE', 'link-16');">QUANTIZE</a></tt> <tt class="py-op">=</tt> <tt id="link-17" class="py-name" targets="Class keras_custom.Quantize=keras_custom.Quantize-class.html"><a title="keras_custom.Quantize" class="py-name" href="#" onclick="return doclink('link-17', 'Quantize', 'link-17');">Quantize</a></tt> </tt>
+<a name="L57"></a><tt class="py-lineno">57</tt>  <tt class="py-line">    <tt id="link-18" class="py-name" targets="Variable enums.KLayers.CONV_BIN=enums.KLayers-class.html#CONV_BIN"><a title="enums.KLayers.CONV_BIN" class="py-name" href="#" onclick="return doclink('link-18', 'CONV_BIN', 'link-18');">CONV_BIN</a></tt> <tt class="py-op">=</tt> <tt id="link-19" class="py-name" targets="Class keras_custom.ConvBin=keras_custom.ConvBin-class.html"><a title="keras_custom.ConvBin" class="py-name" href="#" onclick="return doclink('link-19', 'ConvBin', 'link-19');">ConvBin</a></tt> </tt>
+<a name="L58"></a><tt class="py-lineno">58</tt>  <tt class="py-line">    <tt id="link-20" class="py-name" targets="Variable enums.KLayers.DEPTH_TO_SPACE=enums.KLayers-class.html#DEPTH_TO_SPACE"><a title="enums.KLayers.DEPTH_TO_SPACE" class="py-name" href="#" onclick="return doclink('link-20', 'DEPTH_TO_SPACE', 'link-20');">DEPTH_TO_SPACE</a></tt> <tt class="py-op">=</tt> <tt id="link-21" class="py-name" targets="Class keras_custom.DepthToSpace=keras_custom.DepthToSpace-class.html"><a title="keras_custom.DepthToSpace" class="py-name" href="#" onclick="return doclink('link-21', 'DepthToSpace', 'link-21');">DepthToSpace</a></tt> </tt>
+<a name="L59"></a><tt class="py-lineno">59</tt>  <tt class="py-line">    <tt id="link-22" class="py-name" targets="Variable enums.KLayers.CUSTOM_CONV2D_LSTM=enums.KLayers-class.html#CUSTOM_CONV2D_LSTM"><a title="enums.KLayers.CUSTOM_CONV2D_LSTM" class="py-name" href="#" onclick="return doclink('link-22', 'CUSTOM_CONV2D_LSTM', 'link-22');">CUSTOM_CONV2D_LSTM</a></tt> <tt class="py-op">=</tt> <tt id="link-23" class="py-name" targets="Class keras_custom.CustomConv2DLSTM=keras_custom.CustomConv2DLSTM-class.html"><a title="keras_custom.CustomConv2DLSTM" class="py-name" href="#" onclick="return doclink('link-23', 'CustomConv2DLSTM', 'link-23');">CustomConv2DLSTM</a></tt> </tt>
+<a name="L60"></a><tt class="py-lineno">60</tt>  <tt class="py-line"> </tt>
+<a name="KLayers.__str__"></a><div id="KLayers.__str__-def"><a name="L61"></a><tt class="py-lineno">61</tt> <a class="py-toggle" href="#" id="KLayers.__str__-toggle" onclick="return toggle('KLayers.__str__');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="enums.KLayers-class.html#__str__">__str__</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="KLayers.__str__-collapsed" style="display:none;" pad="++" indent="++++++++"></div><div id="KLayers.__str__-expanded"><a name="L62"></a><tt class="py-lineno">62</tt>  <tt class="py-line">        <tt class="py-keyword">return</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">name</tt><tt class="py-op">.</tt><tt class="py-name">lower</tt><tt class="py-op">(</tt><tt class="py-op">)</tt> </tt>
+</div><a name="L63"></a><tt class="py-lineno">63</tt>  <tt class="py-line"> </tt>
+<a name="L64"></a><tt class="py-lineno">64</tt>  <tt class="py-line">    <tt class="py-decorator">@</tt><tt class="py-decorator">classmethod</tt> </tt>
+<a name="KLayers._missing_"></a><div id="KLayers._missing_-def"><a name="L65"></a><tt class="py-lineno">65</tt> <a class="py-toggle" href="#" id="KLayers._missing_-toggle" onclick="return toggle('KLayers._missing_');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="enums.KLayers-class.html#_missing_">_missing_</a><tt class="py-op">(</tt><tt class="py-param">cls</tt><tt class="py-op">,</tt> <tt class="py-param">value</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="KLayers._missing_-collapsed" style="display:none;" pad="++" indent="++++++++"></div><div id="KLayers._missing_-expanded"><a name="L66"></a><tt class="py-lineno">66</tt>  <tt class="py-line">        <tt class="py-keyword">return</tt> <tt class="py-name">cls</tt><tt class="py-op">.</tt><tt class="py-name">__members__</tt><tt class="py-op">[</tt><tt class="py-name">value</tt><tt class="py-op">.</tt><tt class="py-name">upper</tt><tt class="py-op">(</tt><tt class="py-op">)</tt><tt class="py-op">]</tt> </tt>
+</div></div><a name="L67"></a><tt class="py-lineno">67</tt>  <tt class="py-line"> </tt><script type="text/javascript">
+<!--
+expandto(location.href);
+// -->
+</script>
+</pre>
+<br />
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+      <th class="navbar" width="100%"></th>
+  </tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%%">
+  <tr>
+    <td align="left" class="footer">
+    Generated by Epydoc 3.0.1
+    on Mon Sep 16 20:22:15 2019
+    </td>
+    <td align="right" class="footer">
+      <a target="mainFrame" href="http://epydoc.sourceforge.net"
+        >http://epydoc.sourceforge.net</a>
+    </td>
+  </tr>
+</table>
+
+<script type="text/javascript">
+  <!--
+  // Private objects are initially displayed (because if
+  // javascript is turned off then we want them to be
+  // visible); but by default, we want to hide them.  So hide
+  // them unless we have a cookie that says to show them.
+  checkCookie();
+  // -->
+</script>
+</body>
+</html>
